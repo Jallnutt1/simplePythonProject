@@ -1,0 +1,1 @@
+This GitHub repo is just to show some people how to get started with GitHub and Python. 
