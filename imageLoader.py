@@ -4,19 +4,8 @@ print ('imported sys & cv2')
 
 img = cv2.imread("emilyB.jpeg", cv2.IMREAD_ANYCOLOR)
 
-# while True:
-	# cv2.imshow("Emily", img)
-	# cv2.waitKey(0)
-	# print("wait")
-	# sys.exit() # to exit from all the processes
-	# print("sys.exit")
-
-# cv2.destroyAllWindows() # destroy all windows
-# print("destroyed")
-
 cv2.imshow("Emily", img)
 cv2.waitKey(0)
-# sys.exit()
 cv2.destroyAllWindows()
 
 

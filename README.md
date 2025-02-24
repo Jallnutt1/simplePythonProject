@@ -11,3 +11,7 @@ pip install matplotlib
 pip install opencv-python
 python .\helloWorld.py
 python .\imageLoader.py
+
+install Npcap on Windows https://npcap.com/#download
+
+
