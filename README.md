@@ -13,5 +13,11 @@ python .\helloWorld.py \
 python .\imageLoader.py \
 \
 install Npcap on Windows https://npcap.com/#download \
-
+\
+git check out -b <branch> <- Create a new branch\
+git push -u origin <branch> <- push new branch to remote repository\
+\
+git config --list
+git remote show origin \
+git remote set-url origin https://<TOKEN>github.com/username/repository.git
 
