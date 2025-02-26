@@ -19,5 +19,9 @@ git push -u origin <branch> <- push new branch to remote repository\
 \
 git config --list
 git remote show origin \
-git remote set-url origin https://\<TOKEN\>github.com/username/repository.git
+git remote set-url origin https://\<TOKEN\>github.com/username/repository.git\
+\
+git fethc origin
+git checkout -b \<branch-name\> origin/\<branch-name\>\
+
 
