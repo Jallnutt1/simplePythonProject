@@ -1,4 +1,5 @@
-from scapy.all import scapy, sniff, Ether
+from scapy.all import scapy, sniff, Ether, sr1, IP, ICMP
+
 import platform
 
 print("Scapy is ready!")
@@ -6,14 +7,12 @@ print("Scapy is ready!")
 val = input("How many packets do you want to capture: ")
 print(f"You selected {val} packets to capture!")
 
-IFACE_NAME="Killer(R) Wi-Fi 6 AX1650w 160MHz Wireless Network Adapter (200D2W)"
+packets = sniff(filter="not ip6", count=int(val))
 
-if platform.node() == 'DESKTOP-ISJO6EN':
-	packets = sniff(iface=IFACE_NAME, filter="not ip6", count=int(val))
-	print("This is Jason's Computer")
-else:
-	packets = sniff(filter="not ip6", count=int(val))
-	print("This is not Jason's Computer")
+for packet in packets:
+	print(packet)
 
-for i in packets:
-	print(i.summary())
+# choice = input("What ip address would you like to ping? ")
+# print(f"You choose ip {choice}.")
+
+# sr1(IP(dst=choice)/ICMP())
