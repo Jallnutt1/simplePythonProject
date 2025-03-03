@@ -22,6 +22,6 @@ git remote show origin \
 git remote set-url origin https://\<TOKEN\>@github.com/username/repository.git\
 \
 git fetch origin\
-git checkout -b \<branch-name\> origin/\<branch-name\>\
-git pull origin <other-brnach>\
+git checkout -b \<branch-name\> origin/\<branch-name\> \
+git pull origin \<other-brnach\> \
 
