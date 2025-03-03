@@ -16,3 +16,8 @@ for packet in packets:
 # print(f"You choose ip {choice}.")
 
 # sr1(IP(dst=choice)/ICMP())
+
+# pip install ifcfg
+import ifcfg
+print(ifcfg.interfaces())
+print(type(ifcfg.interfaces()))
